@@ -1,21 +1,19 @@
 package com.weix.bottomnavigation;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import com.weix.R;
 import com.weix.textview.BadgeView;
 
 public class RelativeLayoutTextviewBottomNavigation extends AppCompatActivity implements View.OnClickListener{
     private LinearLayout ly_one,ly_two,ly_three,ly_four;
+//    RadioButton mTextView1;
     private TextView mTextView1,mTextView2,mTextView3,mTextView4;
-    private TextView mTextNum1,mTextNum2,mTextNum3,mTxetNum3;
+    private TextView mTextNum1,mTextNum2,mTextNum3;
     private ImageView mImageView;
 
     @Override
@@ -39,10 +37,10 @@ public class RelativeLayoutTextviewBottomNavigation extends AppCompatActivity im
         ly_three = (LinearLayout)findViewById(R.id.ly_tab_menu_more);
         ly_four = (LinearLayout)findViewById(R.id.ly_tab_menu_user);
 
-        mTextView1 = (TextView)findViewById(R.id.tab_menu_deal);
-        mTextView2 = (TextView)findViewById(R.id.tab_menu_poi);
-        mTextView3 = (TextView)findViewById(R.id.tab_menu_more);
-        mTextView4 = (TextView)findViewById(R.id.tab_menu_user);
+        mTextView1 = findViewById(R.id.tab_menu_deal);
+        mTextView2 = findViewById(R.id.tab_menu_poi);
+        mTextView3 = findViewById(R.id.tab_menu_more);
+        mTextView4 = findViewById(R.id.tab_menu_user);
 
         mTextNum1 = (TextView)findViewById(R.id.tab_menu_deal_num);
         mTextNum2 = (TextView)findViewById(R.id.tab_menu_poi_num);

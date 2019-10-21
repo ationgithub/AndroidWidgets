@@ -10,6 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.weix.R;
+import com.weix.textview.BadgeView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,7 @@ public class RadioButtonBottomNavigation extends AppCompatActivity {
 
     private ViewPager mViewPager;
     private RadioGroup mTabRadioGroup;
+//    private RadioButton mRadioButton;
 
     private List<Fragment> mFragments;
     private FragmentPagerAdapter mAdapter;
@@ -33,6 +35,10 @@ public class RadioButtonBottomNavigation extends AppCompatActivity {
         // find view
         mViewPager = findViewById(R.id.fragment_vp);
         mTabRadioGroup = findViewById(R.id.tabs_rg);
+//        mRadioButton = findViewById(R.id.record_tab);
+//        BadgeView badgeView2 = new BadgeView(this);
+//        badgeView2.setTargetView(mRadioButton);
+//        badgeView2.setBadgeCount(9);
         // init fragment
         mFragments = new ArrayList<>(4);
         mFragments.add(BlankFragment.newInstance("今日"));
