@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/transparent">
+
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="信息"
+            android:textColor="@color/gray"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ly_tab_menu_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tab_menu_deal"
+                    style="@style/tab_menu_text"
+                    android:drawableTop="@drawable/tab_sign_selector"
+                    android:text="点餐" />
+
+                <TextView
+                    android:id="@+id/tab_menu_deal_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tab_menu_deal"
+                  />
+                <!--<TextView-->
+                    <!--android:id="@+id/tab_menu_deal_num"-->
+                    <!--android:layout_toRightOf="@+id/tab_menu_deal"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginTop="25dp"-->
+                    <!--android:text="101"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:visibility="gone"-->
+                    <!--/>-->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_tab_menu_poi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tab_menu_poi"
+                    style="@style/tab_menu_text"
+                    android:drawableTop="@drawable/tab_record_selector"
+                    android:text="商铺" />
+
+                <TextView
+                    android:id="@+id/tab_menu_poi_num"
+                    style="@style/tab_menu_bgnum"
+                    android:layout_toRightOf="@+id/tab_menu_poi"
+                    android:text="99+"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_tab_menu_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tab_menu_more"
+                    style="@style/tab_menu_text"
+                    android:drawableTop="@drawable/tab_contact_selector"
+                    android:text="更多" />
+
+                <TextView
+                    android:id="@+id/tab_menu_more_num"
+                    style="@style/tab_menu_bgnum"
+                    android:layout_toRightOf="@+id/tab_menu_more"
+                    android:text="99+"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_tab_menu_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tab_menu_user"
+                    style="@style/tab_menu_text"
+                    android:drawableTop="@drawable/tab_setting_selector"
+                    android:text="用户" />
+
+                <ImageView
+                    android:id="@+id/tab_menu_setting_partner"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_toRightOf="@id/tab_menu_user"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/ly_tab_menu"
+        android:background="@color/gray" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_below="@id/ly_top_bar"/>
+
+</RelativeLayout>

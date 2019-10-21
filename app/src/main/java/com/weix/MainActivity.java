@@ -1,7 +1,7 @@
 package com.weix;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.weix.search.SearchTipsGroupView;
@@ -10,7 +10,7 @@ import weix.xjp.searchtips.wideght.OnItemClick;
 
 
 
-public class MainActivity extends ActionBarActivity implements OnItemClick {
+public class MainActivity extends AppCompatActivity implements OnItemClick {
 
     private SearchTipsGroupView view;
     private String items[] = {"视频", "么么哒", "动画", "音乐", "猜你喜欢", "最近热门", "影院", "游戏", "好得多"};

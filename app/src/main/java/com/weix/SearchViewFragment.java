@@ -14,6 +14,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.weix.R;
+
 @SuppressLint("ValidFragment")
 public class SearchViewFragment extends Fragment {
 
