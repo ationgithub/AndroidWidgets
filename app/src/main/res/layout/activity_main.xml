@@ -4,16 +4,38 @@
     android:layout_height="match_parent"
     android:layout_marginTop="16dp"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/msearchLi"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:orientation="horizontal">
+        <SearchView
+            android:id="@+id/msearchs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="5"
+            android:layout_marginLeft="10dp"
+            android:iconifiedByDefault="false"
+            android:focusable="false"
+            android:background="@drawable/searchview_shape"/>
+    </LinearLayout>
+    <!--<weix.xjp.searchtips.wideght.SearchTipsGroupView-->
+        <!--android:id="@+id/search_tips"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
 
-    <weix.xjp.searchtips.wideght.SearchTipsGroupView
-        android:id="@+id/search_tips"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <!--</weix.xjp.searchtips.wideght.SearchTipsGroupView>-->
 
-    </weix.xjp.searchtips.wideght.SearchTipsGroupView>
-
-    <FrameLayout
-        android:id="@+id/root_layout_common"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <!--<FrameLayout-->
+        <!--android:id="@+id/root_layout_common"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+    <!-- 组织结构树 -->
+    <ListView
+        android:id="@+id/lv_tree_organization_activity"
+        android:layout_below="@+id/msearchLi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </RelativeLayout>

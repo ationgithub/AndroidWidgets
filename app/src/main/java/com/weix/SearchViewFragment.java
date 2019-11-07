@@ -1,4 +1,4 @@
-package weix.xjp.searchtips;
+package com.weix;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -39,6 +39,7 @@ public class SearchViewFragment extends Fragment {
         int closeImagId = getResources().getIdentifier("android:id/search_close_btn", null, null);
         ImageView closeImag = (ImageView) searchView.findViewById(closeImagId);
         closeImag.setLayoutParams(new LinearLayout.LayoutParams(0, 0));
+
         cancelBtn = (TextView) view.findViewById(R.id.cancel);
         return view;
     }
