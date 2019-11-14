@@ -1,4 +1,4 @@
-package com.weix;
+package com.weix.search;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

@@ -3,20 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".charts_xcl.MainAcitvityChartX"
    >
 
    <!--<ScrollView-->
        <!--android:layout_width="match_parent"-->
        <!--android:layout_height="match_parent">-->
-    <!--<RelativeLayout-->
-        <!--android:id="@+id/main_relative_layout"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--&gt;-->
-        <!-- 组织结构树 -->
-        <ListView
-            android:id="@+id/lv_tree_organization"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    <com.weix.charts_xcl.MultiAxisChart03View
+        android:id="@+id/main_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+         <!--组织结构树 -->
+        <!--<ListView-->
+            <!--android:id="@+id/lv_tree_organization"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
 
 </FrameLayout>

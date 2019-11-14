@@ -16,6 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+
 }
 
 dependencies {
@@ -35,4 +39,7 @@ dependencies {
     implementation 'com.afollestad.material-dialogs:core:0.8.6.1'
     implementation 'com.trycatch.android:mysnackbar:1.2.2'
     implementation 'com.github.zhaokaiqiang.klog:library:1.5.0'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'org.xclcharts:lib:2.4'
 }

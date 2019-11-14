@@ -70,7 +70,7 @@ public class BlankFragment extends Fragment {
                     PourPositionData xx = rib.body();
                     dd = xx.getData();
 //                    setTree();
-                    setTree1();
+//                    setTree1();
                 }
             }
             @Override
@@ -87,7 +87,7 @@ public class BlankFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_blank, container, false);
 //        TextView contentTv = rootView.findViewById(R.id.content_tv);
 //        relativeLayout = (RelativeLayout) rootView.findViewById(R.id.main_relative_layout);
-        treeListView = (ListView) rootView.findViewById(R.id.lv_tree_organization);
+//        treeListView = (ListView) rootView.findViewById(R.id.lv_tree_organization);
 //        contentTv.setText(mContentText);
         return rootView;
     }
@@ -110,26 +110,26 @@ public class BlankFragment extends Fragment {
 //        });
 //    }
 
-    void setTree1(){
-        treeNodes = new ArrayList<>();
-        for(PourPositionData.DataBean d:dd){
-            OrganizationBean ob = new OrganizationBean(d.getProjectNo(),
-                    d.getParentNo(),
-                    d.getProjectname(),
-                    d.getId());
-            treeNodes.add(ob);
-        }
-        try {
-            mAdapter = new OrganizationTreeListViewAdapter<>(treeListView, getActivity(), treeNodes, 10);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
-        mAdapter.setOnTreeNodeClickListener(new TreeListViewAdapter.OnTreeNodeClickListener() {
-            @Override
-            public void onClick(Node node, int position) {
-                if (node.isLeaf()) {
-                }
-            }
-        });
-    }
+//    void setTree1(){
+//        treeNodes = new ArrayList<>();
+//        for(PourPositionData.DataBean d:dd){
+//            OrganizationBean ob = new OrganizationBean(d.getProjectNo(),
+//                    d.getParentNo(),
+//                    d.getProjectname(),
+//                    d.getId());
+//            treeNodes.add(ob);
+//        }
+//        try {
+//            mAdapter = new OrganizationTreeListViewAdapter<>(treeListView, getActivity(), treeNodes, 10);
+//        } catch (IllegalAccessException e) {
+//            e.printStackTrace();
+//        }
+//        mAdapter.setOnTreeNodeClickListener(new TreeListViewAdapter.OnTreeNodeClickListener() {
+//            @Override
+//            public void onClick(Node node, int position) {
+//                if (node.isLeaf()) {
+//                }
+//            }
+//        });
+//    }
 }

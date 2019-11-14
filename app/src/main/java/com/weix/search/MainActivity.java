@@ -1,4 +1,4 @@
-package com.weix;
+package com.weix.search;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
+
+import com.weix.R;
 import com.weix.commonUtils.HttpHelper;
 import com.weix.treeViews.PourPositionData;
 import com.weix.treeview.Node;
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
     private OrganizationTreeListViewAdapter<OrganizationBean> mAdapter;
     private ListView treeListView;
     private List<OrganizationBean> treeNodes;
+    // 不能 无字符串 点击搜索
     SearchView searchView;
 //    List<Node> searchNodes;
 
