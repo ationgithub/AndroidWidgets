@@ -135,12 +135,12 @@
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.1.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: id.zelory:compressor-1.0.4" level="project" />
-    <orderEntry type="library" name="Gradle: org.xclcharts:lib-2.4" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core-1.1.0" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.afollestad.material-dialogs:core-0.8.6.1" level="project" />
     <orderEntry type="library" name="Gradle: io.reactivex:rxjava:1.1.6@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.9.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.1.0" level="project" />
+    <orderEntry type="module" module-name="xcl_chartLib" />
   </component>
 </module>

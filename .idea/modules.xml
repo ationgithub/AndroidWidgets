@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidWidgets.iml" filepath="$PROJECT_DIR$/AndroidWidgets.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xcl_chartLib/xcl_chartLib.iml" filepath="$PROJECT_DIR$/xcl_chartLib/xcl_chartLib.iml" />
     </modules>
   </component>
 </project>

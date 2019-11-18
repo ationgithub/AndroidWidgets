@@ -27,12 +27,13 @@ import android.util.AttributeSet;
 import org.xclcharts.common.DensityUtil;
 import org.xclcharts.view.ChartView;
 
+
 /**
  * @ClassName DemoView
  * @Description  各个例子view的view基类
  * @author XiongChuanLiang<br/>(xcl_168@aliyun.com)
  */
-public class DemoView extends ChartView{
+public class DemoView extends ChartView {
 
 	
 	public DemoView(Context context) {
@@ -55,7 +56,7 @@ public class DemoView extends ChartView{
 	protected int[] getBarLnDefaultSpadding()
 	{
 		int [] ltrb = new int[4];
-		ltrb[0] = DensityUtil.dip2px(getContext(), 40); //left	
+		ltrb[0] = DensityUtil.dip2px(getContext(), 40); //left
 		ltrb[1] = DensityUtil.dip2px(getContext(), 60); //top	
 		ltrb[2] = DensityUtil.dip2px(getContext(), 20); //right	
 		ltrb[3] = DensityUtil.dip2px(getContext(), 40); //bottom						

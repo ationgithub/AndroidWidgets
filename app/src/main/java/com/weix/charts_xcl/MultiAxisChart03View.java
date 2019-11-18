@@ -186,8 +186,8 @@ public class MultiAxisChart03View extends DemoView {
 			chartLn.setPadding(left, ltrb[1],right, ltrb[3]);	//ltrb[2]
 			chartLn.setCategories(mLabels);								
 			chartLn.setDataSource(chartData);
-			chartLn.getDataAxis().setAxisMax(100);
-			chartLn.getDataAxis().setAxisSteps(20);
+			chartLn.getDataAxis().setAxisMax(1.0);
+			chartLn.getDataAxis().setAxisSteps(0.2);
 			chartLn.setPlotPanMode(XEnum.PanMode.HORIZONTAL);
 			chartLn.getPlotGrid().showHorizontalLines();
 			chartLn.getPlotGrid().showVerticalLines();
