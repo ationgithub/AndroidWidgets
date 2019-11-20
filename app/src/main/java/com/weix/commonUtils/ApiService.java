@@ -1,6 +1,7 @@
 package com.weix.commonUtils;
 
 import com.weix.charts_xcl.ChartData;
+import com.weix.listview.tabale_recyclerview.TensionProcessData;
 import com.weix.treeViews.PourPositionData;
 
 import okhttp3.RequestBody;
@@ -25,6 +26,9 @@ public interface ApiService {
     //通知人
     @GET
     Call<PourPositionData> getTongzhiren(@Url String url);
+
+    @GET
+    Call<TensionProcessData> getMessage(@Url String url);
 
     @GET
     Call<ChartData> getZhoubiao(@Url String url);

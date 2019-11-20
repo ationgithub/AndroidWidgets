@@ -23,6 +23,7 @@ import org.xclcharts.event.click.PointPosition;
 import org.xclcharts.renderer.XEnum;
 import org.xclcharts.renderer.plot.PlotGrid;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -40,16 +41,20 @@ public class MultiAxisChart03View extends DemoView {
 	LinkedList<Double> dataSeries2= new LinkedList<Double>();
 	LinkedList<Double> dataSeries3= new LinkedList<Double>();
 
+	// 分割段数，默认为5    dataRange开启值域漫游，会默认分100分，所以，最大值和最小值见在精度范围内要能分成100分
+//    y轴动态设定steps，   <  stepsize = (max - min)/listsize    <
 
+//    Collections.max(input))  Collections.min(input)) 6 7 8 9 10 细粒度的算法
 	double a = 100;
 	double b = 1;
 
 	private Paint mPaintTooltips = new Paint(Paint.ANTI_ALIAS_FLAG);
-		
-	public MultiAxisChart03View(Context context,LinkedList<String> mLabelsAxes,LinkedList<Double> dataSeries1,LinkedList<Double> dataSeries2,LinkedList<Double> dataSeries3) {
+
+	public MultiAxisChart03View(Context context,LinkedList<String> zhanglaTime, LinkedList<Double> shengchangliang, LinkedList<Double> youya, LinkedList<Double> dingxingcheng,LinkedList<Double> zhanglali) {
 		super(context);
 		// TODO Auto-generated constructor stub
 		initView();
+
 	}	 
 	
 	public MultiAxisChart03View(Context context, AttributeSet attrs){
@@ -148,6 +153,7 @@ public class MultiAxisChart03View extends DemoView {
 				chart.setPlotPanMode(XEnum.PanMode.HORIZONTAL);
 				chart.getDataAxis().setAxisMax(1000);
 				chart.getDataAxis().setAxisMin(0);
+
 				chart.getDataAxis().setAxisSteps(200);
 				chart.getPlotGrid().showHorizontalLines();
 				chart.getPlotGrid().showVerticalLines();

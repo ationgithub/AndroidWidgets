@@ -11,4 +11,17 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="order">序列</string>
+    <string name="jltime">记录时间</string>
+    <string name="zlcs">张拉次数</string>
+    <string name="zt1">状态1</string>
+    <string name="zll1">张拉力1</string>
+    <string name="yy1">油压1</string>
+    <string name="dxc1">顶行程1</string>
+    <string name="scl1">伸长量1</string>
+    <string name="zt2">状态2</string>
+    <string name="zll2">张拉力2</string>
+    <string name="yy2">油压2</string>
+    <string name="dxc2">顶行程2</string>
+    <string name="scl2">伸长量2</string>
 </resources>
